@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-button span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.chef-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 60px;
+}
+
+.content {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #8c6d45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    #menu-toggle:checked+.menu-button+nav {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #f2f2f2;
+        width: 200px;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .content,
+    .image {
+        max-width: 100%;
+    }
+}
+
+.contenedor {
+    background-image: url("./fondo_inicio.png");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 550px;
+    border: 1px solid rgb(243, 238, 238);
+    margin: 0 auto;
+
+
+
+}
+
+
+.aja {
+    display: flex;
+    justify-content: center;
+}
+
+.si2 {
+    margin: 10px auto;
+    padding: 15px 50px;
+    width: 35%;
+    height: 60%;
+    border: 1px solid #0f0f0f;
+    box-sizing: 7px;
+    background-color: #b3a36b;
+}
+
+input[type="text"] {
+    margin: 10px 10px;
+    box-sizing: border-box;
+    background-color: rgb(171, 139, 100);
+}
+
+input[type="password"] {
+    margin: 10px 10px;
+    box-sizing: border-box;
+    background-color: rgb(171, 139, 100);
+}
+
+input[type="date"] {
+    margin: 10px 10px;
+    box-sizing: border-box;
+    background-color: rgb(171, 139, 100);
+}
+
+button {
+    background-color: rgb(173, 149, 92);
+    color: rgb(11, 12, 12);
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.auntentic {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.si {
+    margin: 10px auto;
+    padding: 15px 30px;
+    width: 30%;
+    height: 60%;
+    border: 1px solid #0f0f0f;
+    box-sizing: 7px;
+    background-color: #DACB8A;
+}
+
+.bodyregis {
+    background-color: #8c6d45;
+}
+
+.sis {
+    background-color: rgb(86, 63, 42);
+    margin: 5px 10px;
+    padding: 5px 30px;
+    color: beige;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px
+}
+
+.bodyaunten {
+    background-color: #8c6d45;
+}
