@@ -26,18 +26,19 @@ function registrarUsuario() {
     document.getElementById("resultadoRegistro").innerHTML = mensaje;
 }
 //para autenticacion 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const user = document.getElementById('user').value;
-    const password = document.getElementById('password').value;
+function validar(event) {
+    event.preventDefault(); 
+    let correo = document.getElementById("gmail").value;
+    let contraseña = document.getElementById("n2").value;
+    console.log(correo + " " + contraseña);
+    const correoCorrecto = "admin@gmail.com";
+    const contraseñaCorrecta = "123";
 
-    const correo = localStorage.getItem('correo');
-    const contra = localStorage.getItem('contra');
-
-    if (user === correo && password === contra) {
-        resultadoLogin.innerHTML = 'Inicio de sesión exitoso';
-        
+    if (correo === correoCorrecto && contraseña === contraseñaCorrecta) {
+        document.getElementById('res1').innerHTML = "Inicio de sesión correcto";
+        window.location.href = 'index.html';
+        console.log("entro");
     } else {
-        resultadoLogin.innerHTML = 'Correo o contraseña incorrectos.';
+        document.getElementById('res1').innerHTML = "Correo electrónico o contraseña incorrecta";
     }
-});
+}
