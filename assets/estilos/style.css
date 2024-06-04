@@ -13,7 +13,7 @@ header {
     padding: 10px 20px;
 }
 
-.container {
+.container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,7 +153,7 @@ button {
     }
 }
 
-.contenedor {
+.contenedor1 {
     background-image: url("./fondo_inicio.png");
     background-size: cover;
     background-position: center;
@@ -232,6 +232,7 @@ button {
     margin-bottom: 20px;
     align-items: center;
     text-align: center;
+    border: 1px solid rgb(11, 12, 12) ;
 }
 
 .auntentic {
@@ -267,5 +268,5 @@ button {
 }
 
 .bodyaunten {
-    background-color: #8c6d45;
+    background-color: #b3a36b;
 }
